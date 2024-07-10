@@ -69,7 +69,7 @@
 
 /*Third section*/
 
-.third-sec-img,.fourth-sec-img, .fifth-sec-img {
+.third-sec-img,.fourth-sec-img{
     width: 50%;
 }
 
@@ -107,14 +107,14 @@
     font-style: italic;
     font-weight: 400;
 }
-.fourth-sec-elements p,.fifth-sec-elements p,.sixth-sec-elements p,.eight-sec-elements p{
+.fourth-sec-elements p,.sixth-sec-elements p,.eight-sec-elements p{
     font-size: 14px;
     line-height: 25px;
     margin-top: 20px;
     font-style: italic;
     font-weight: 400;
 }
-.fourth-sec-elements,.fifth-sec-elements,.sixth-sec-elements,.eight-sec-elements{
+.fourth-sec-elements,.sixth-sec-elements,.eight-sec-elements{
     padding-right: 60px;
 }
 .third-section .learn-btn{
@@ -132,7 +132,7 @@
 
 /*Fourth Section*/
 
-.fourth-section .learn-btn ,.fifth-section .learn-btn,.sixth-section .learn-btn{
+.fourth-section .learn-btn ,.sixth-section .learn-btn{
     background: #000;
     padding: 5px 20px;
     border-radius: 20px;
@@ -161,10 +161,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left:250px;
+    margin-left:320px;
     width: 350px;
-
-
+}
+.fifth-sec-elements{
+    margin-left: 30px;
+}
+.fifth-sec-img{
+    width: 40%;
 }
 
 .fifth-sec-content-icon{
@@ -178,6 +182,27 @@
 .fifth-sec-elements{
     z-index: 1;
     position: absolute;
+}
+.fifth-sec-elements p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.fifth-section .learn-btn{
+    background-image: linear-gradient(to right, #84abec, #cf84fb);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 30px;
 }
 
 /*     sixth part  */
@@ -202,7 +227,13 @@
 .eight-sec-content{
     width: 375px;
 }
-
+.eight-sec-img-icon{
+    width: 100px;
+    top: 0;
+    left: 0;
+    height: 120px;
+    z-index: 0;
+}
 .eight-sec-elements h3{
     font-size: 30px;
     margin-top: 20px;
@@ -210,8 +241,7 @@
     z-index:1;
 }
 .eight-sec-elements p{
-    
-    margin:55px 0;
+    margin: 55px 0;
     font-size: 17px;
     padding-left: 20px;
 }
@@ -229,6 +259,7 @@
     font-weight: bold;
 
 }
+
 /*seventh Section*/
 .seventh-section {
     margin: 30px 0;
@@ -258,10 +289,11 @@
 .seventh-section .white-box h2 {
     font-size: 49px;
     margin-top: 70px;
-    margin-left: 200px;
+    margin-left: 400px;
     line-height: 59px;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
+
 }
 
 .seventh-section .white-box button {
@@ -273,7 +305,7 @@
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 2px;
-    margin-left: 200px;
+    margin-left: 400px;
     margin-top: 40px;
 }
 /*ninth Section*/
@@ -299,8 +331,8 @@
     font-size:28px;
 }
 .ninth-section{
-    margin-left:115px;
-    
+    margin-top: 55px;
+    margin-left:480px;
 }
 .ninth-elements-text1{
     width:400px;
@@ -309,49 +341,36 @@
 .ninth-elements-text2{
     width:700px;
 }
-/*picture Section*/
-.pictures{
+
+ /*picture part*/
+.grid-container {
+    margin-top: 45px;
     display: grid;
-    width: 100px;
-    height: 100px;
-    grid-template-columns: 100px 100px;
-    grid-template-rows:100px 100px 100px 100px ; 
-
+    grid-template-columns: repeat(4, 2fr);
+  }
+  .grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/*              lastt            part  */
+.last-section{
+    margin-top:0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px 90px;
+    padding-right: 135px;
+    background-color:#333;
+    border:15px solid transparent;
 }
-.one{
-    grid-row:1/3;
-    grid-column:1/2;
+.last-section h3,.last-section p{
+    color: white;
+    font-family: Roboto, Arial, "sans-serif";;
+    font-size: 14px;
+    text-align: left;
+        
 }
-.two{
-    grid-row: 2/4;
-    grid-column: 1/2;
-}
-.three{
-    grid-row: 3/5;
-    grid-column: 1/2;
-}
-.four{
-    grid-row: 4/6;
-    grid-column: 1/2;
-}
-.five{
-    grid-row: 1/3;
-    grid-column: 2/3;
-}
-.six{
-    grid-row: 2/4;
-    grid-column: 2/3;
-}
-.seven{
-    grid-row: 3/5;
-    grid-column: 2/3;
-
-}
-.eight{
-    grid-row: 4/6;
-    grid-column: 2/3;
-}
-
 
 
 /*Responsive*/
